@@ -22,9 +22,13 @@ const Users: React.FC = () => {
   }, [])
 
   return (
-    <ul>
+    <ul className="user">
       {users.map((user: Props) => (
-        <div className="ui card " key={user.id} style={{ background: "pink" }}>
+        <div
+          className="ui card"
+          key={user.id}
+          style={{ background: "#FF9F33" }}
+        >
           <div className="content">
             <div className="header">Name: {user.name}</div>
           </div>
